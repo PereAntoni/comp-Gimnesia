@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Componentes con Vue.js</title>
+</head>
+<body>
+    <div>
+        <h1>
+            aqui ha de sortir el joc seleccionat.
+        </h1>
+    </div>
+    <div id="app-gimnesia">
+        <gimnesia-card
+            v-for="(cartes, index) in cartes"
+            :key="index"
+            :nom="cartes.nom"
+            :nivell="cartes.nivell"
+            :cientific="cartes.cientific"
+            :codi="cartes.codi"
+        >
+    </div>
+    adeu
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!--
+An example of creating a reusable grid component and using it with external data.
+-->
+
+a<div id="app">
+  <form id="search">
+    Search <input name="query" v-model="searchQuery">
+  </form>
+  <demo-grid
+    :data="gridData"
+    :columns="gridColumns"
+    :filter-key="searchQuery">
+  </demo-grid>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  
+  <script src="app.js"></script>
+  <script src="./Grid.js".js"></script>
+</div>
